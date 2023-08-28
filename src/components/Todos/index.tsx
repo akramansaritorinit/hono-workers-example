@@ -25,10 +25,17 @@ export const Item = ({ id, name, completed }: { id: number; name: string; comple
                 type="checkbox"
                 checked={!!completed}
                 class="mr-2 h-6 w-6"
+                placeholder="Todo Name"
             />
             {name}
         </label>
-        <button hx-delete={`/todo/${id}`} hx-swap="outerHTML" hx-target={`#item-${id}`}>
+        <button
+            id={`delete-todo-${id}`}
+            aria-label="Delete Todo"
+            hx-delete={`/todo/${id}`}
+            hx-swap="outerHTML"
+            hx-target={`#item-${id}`}
+        >
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
