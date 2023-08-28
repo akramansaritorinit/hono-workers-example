@@ -6,7 +6,12 @@ export const AddTodoForm = () => (
         _="on htmx:afterRequest reset() me"
         class="mb-4 flex items-center gap-5"
     >
-        <input name="name" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2" />
+        <input
+            aria-label="Todo Name"
+            name="name"
+            type="text"
+            class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg p-2"
+        />
         <button class="h-fit text-white bg-blue-700 hover:bg-blue-800 rounded-md px-3 py-2 text-center" type="submit">
             Add
         </button>
