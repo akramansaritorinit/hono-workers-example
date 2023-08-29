@@ -1,6 +1,8 @@
 node_modules/
 .wrangler
 .dev.vars
+dist/
+build/
 
 # Change them to your taste:
 wrangler.toml
